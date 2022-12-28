@@ -48,14 +48,14 @@ def download(video_url):
 def main():
 	# test.png => location_of_image
 		# path =f""
-	for j in range(int(len(os.listdir('pics')))):
-		img = Image.open("pics/{}.jpg".format(j+1))
+	for j in (os.listdir('pics')):
+		img = Image.open("pics/{}".format(j))
 		# img.show()
 		w,h = img.size
-
+		img = img.crop((0,500,w,2050))
 		for i in range(9):
 			if 190*(i+1)>h:
-				print("size wali bhackchodi")
+				# print("size wali bhackchodi")
 				break
 			im = img.crop((0,190*i,w,190*(i+1)))
 			# im.show()
