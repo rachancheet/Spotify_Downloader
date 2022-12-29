@@ -1,5 +1,4 @@
 from PIL import Image,ImageGrab
-import pytesseract
 # import pywhatkit as kt
 import pyautogui as pg
 import time
@@ -12,6 +11,9 @@ from bs4 import BeautifulSoup
 import youtube_dl
 # import HTMLParser
 # from autoscraper import Autoscraper
+import pytesseract
+
+# pytesseract.pytesseract.tesseract_cmd = r'Tesseract-OCR\tesseract'
 
 def get_video_url(name):
 	try:
