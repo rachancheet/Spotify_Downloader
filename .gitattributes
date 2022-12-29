@@ -1,2 +1,2 @@
 .exe filter=lfs diff=lfs merge=lfs -text
-spotify_downloader.exe filter=lfs diff=lfs merge=lfs -text
+Spotify_downloader.exe filter=lfs diff=lfs merge=lfs -text
