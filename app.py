@@ -8,7 +8,7 @@ import requests
 from PIL import Image
 import re
 from bs4 import BeautifulSoup
-import youtube_dl
+import yt_dlp as youtube_dl
 # import HTMLParser
 # from autoscraper import Autoscraper
 import pytesseract
@@ -43,7 +43,7 @@ def download(video_url):
 	except:
 		print('not able to download')
  
-	print("Download complete... {}".format(filename))
+	# print("Download complete... {}".format(filename))
 
 
 
